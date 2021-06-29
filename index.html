@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora com JS</title>
+
+    <link rel="stylesheet" href="css/calculadora.css">
+</head>
+
+<body>
+    <main class="conteudo-principal">
+
+        <h2 class="conteudo-principal__titulo">Calculadora com JavaScript</h2>
+
+        <form class="conteudo-principal__calculadora" name="calcula_dora" action="c">
+            <fieldset class="calculadora__cabecalho">
+            <input type="text" class="cabecalho__conta" id="tela" value=" " readonly> <!---->
+                <label class="cabecalho__resultado" id="resultado">  </label>
+            </fieldset>
+            <fieldset class="calculadora__corpo">
+                <input type="button" class="botao-calculadora botao-calculadora--outras-operacoes" value="AC" onclick="reset()">
+                <input type="button" class="botao-calculadora botao-calculadora--outras-operacoes" value="+/-" onclick="insert(value)">
+                <input type="button" class="botao-calculadora botao-calculadora--outras-operacoes" value="%"onclick="insert(value)">
+                <input type="button" class="botao-calculadora botao-calculadora--operacao" value="/"onclick="insert(value)">
+                <input type="button" class="botao-calculadora" value="7" onclick="insert(value)">
+                <input type="button" class="botao-calculadora" value="8" onclick="insert(value)">
+                <input type="button" class="botao-calculadora" value="9" onclick="insert(value)">
+                <input type="button" class="botao-calculadora botao-calculadora--operacao" value="x" onclick="insert(value)">
+                <input type="button" class="botao-calculadora" value="4" onclick="insert(value)">
+                <input type="button" class="botao-calculadora" value="5" onclick="insert(value)">
+                <input type="button" class="botao-calculadora" value="6" onclick="insert(value)">
+                <input type="button" class="botao-calculadora botao-calculadora--operacao" value="-" onclick="insert(value)">
+                <input type="button" class="botao-calculadora" value="1" onclick="insert(value)">
+                <input type="button" class="botao-calculadora" value="2" onclick="insert(value)">
+                <input type="button" class="botao-calculadora" value="3" onclick="insert(value)">
+                <input type="button" class="botao-calculadora botao-calculadora--operacao" value="+" onclick="insert(value)">
+                <input type="button" class="botao-calculadora" value="&#10226;" onclick="apagar()" > 
+                <input type="button" class="botao-calculadora" value="0" onclick="insert(value)">
+                <input type="button" class="botao-calculadora" value="." onclick="insert(value)">
+                <input type="button" class="botao-calculadora botao-calculadora--operacao" value="=" id="mostraresultado" onclick="calcular()">
+            </fieldset>
+         </form>
+     </main>
+     <script src="script.js"></script>
+</body>
+
+</html>
